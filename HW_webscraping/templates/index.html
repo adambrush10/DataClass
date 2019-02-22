@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mission to Mars</title>
+
+<link rel="stylesheet2" type="text/css" href="index.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <center> <h1>Mission to Mars</h1>
+    <div class="container">
+
+      <div class = 'title_div'>
+      <button type="button", class=button>Scrape New Data</button>
+    </div> </center>
+
+  <div class="row">
+
+    <div class="col-sm">
+        <h2>Latest Mars News</h2>
+        <h2>{{ mars.news_title }}</h2>
+
+          <p>{{ mars.headline_description }}</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-8">
+
+        <h2>Featured Mars Image</h2>
+        <div><img src= /static/img/mars-full.jpg alt="Smiley face" height="400" width="400"> </div>
+        <p>
+      </p>
+    </div>
+  <div class="col-4">
+    <div>
+      <h3>Mars Weather</h3>
+      <p>
+        {{ mars.weather }}
+      </p>
+    </div>
+  <div>
+    <h3>Mars Facts</h3>
+    <p>
+      {{ mars.fact_key }}
+    </p>
+  </div>
+    </div>
+      </div>
+
+
+        <div class="row">
+          <div class='col-6'>
+          <h2>Cerberus</h2>
+          <p>  <img src={{ mars.hemiA }} alt="1" height="400" width="400">
+        </p>
+      </div>
+      <div class='col-6'>
+      <h2>Schiaparelli</h2>
+      <p>  <img src={{ mars.hemiB }} alt="2" height="400" width="400">
+    </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class='col-6'>
+      <h2>Syrtis</h2>
+      <p>  <img src={{ mars.hemiC }} alt="3" height="400" width="400">
+    </p>
+  </div>
+
+  <div class='col-6'>
+  <h2>Valles</h2>
+  <p>  <img src={{ mars.hemiD }} alt="4" height="400" width="400">
+</p>
+</div>
+</div>
+
+
+
+  </body>
+</html>
